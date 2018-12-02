@@ -18,12 +18,7 @@ public class Main {
 
     private Main() {
         System.out.println(test().toString());
-    	
-        //System.out.println(randomGraph(50, 75).toString());
-        
-       
-        //Vertex start = g.getVertices().get(new Random().nextInt(g.getVertices().size()));
-        //Vertex goal = g.getVertices().get(new Random().nextInt(g.getVertices().size()));
+
         Vertex start = g.getVertex("Berlin");
         Vertex goal = g.getVertex("USA");
         
@@ -64,9 +59,7 @@ public class Main {
 
         return g;
     }
-
-
-
+	
     private Graph test() {
         g.addEdge(new Vertex<>("Berlin"), new Vertex<>("Berlin"), 5);
         g.addEdge(new Vertex<>("Berlin"), new Vertex<>("Muenchen"), 3);
